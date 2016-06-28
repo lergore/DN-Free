@@ -1,0 +1,13 @@
+.paywall {
+	display: none !important;
+}
+
+.article__premium-content{
+	display: block !important;
+}
+
+.article__lead {
+	position: static !important;
+	max-height: none !important;
+	overflow: visible !important;
+}

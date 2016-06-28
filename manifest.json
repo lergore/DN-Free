@@ -1,0 +1,23 @@
+{
+	"manifest_version": 2,
+	"update_url":"http://clients2.google.com/service/update2/crx",
+  	"name": "DN Free",
+  	"version": "1.0",
+  	"description": "Read unlimited number of articles",
+
+  	"page_action": {
+  		"default_icon": {                    
+            "19": "icons/dn_black_19x19.png",           
+            "38": "icons/dn_black_38x38.png"            
+          }
+  	},
+
+
+    "permissions": [ "tabs", "http://www.dn.se/*" ],
+    "content_scripts": [
+    {
+      "matches": ["http://www.dn.se/*"], 
+      "css" : ["dn.css"]
+    }
+]
+}
